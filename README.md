@@ -44,10 +44,10 @@ Ejecuta el siguiente comando en la terminal:
 `g++ -std=c++11 mainTienda.cpp` 
 `./a.out` 
 
-### Clases Principales
+## Clases Principales
 En el proyecto existen las siguientes clases:
 1. **Producto**: Representa un artículo de ropa con atributos como precio, nombre y stock
-2. **Cliente**: Representa a un cliente de la tienda y se maneja la información de los mismos
+2. **Cliente**: Representa a un cliente de la tienda y se maneja la información de los mismos, tienen atributos como ID y Nombre
 3. **Tienda**: Gestiona todas las operaciones relacionadas con el inventario
 4. **BSTCliente**: Implementa el árbol binario de búsqueda para la gestión de clientes
    
