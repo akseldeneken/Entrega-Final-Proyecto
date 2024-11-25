@@ -137,8 +137,37 @@ Búsqueda: O(n)
 Eliminación: O(n)
 
 ### 3. **Análisis de Complejidad de Otros Componentes y Complejidad Total**
-Búsqueda por Precio: La complejidad de la búsqueda por precio (busquedaBinaria) es O(nlogn), ya que primero requiere ordenar el inventario utilizando Merge Sort (O(nlogn)) y luego realiza la búsqueda binaria (O(logn)), siendo el ordenamiento el paso dominante.  
-Mostrar Inventario (mostrarInventario): Recorre el vector de productos y muestra cada producto en la consola. El tiempo requerido para recorrer el vector es O(n), ya que debe iterar por cada producto una vez para imprimir sus datos. Así que la complejidad es O(n).  
+Función de Importación de Inventario (leerInventarioDesdeArchivo)
+Mejor caso: O(n), cuando todos los datos son válidos
+Caso promedio: O(n), iterando sobre cada línea del archivo
+Peor caso: O(n), con validaciones adicionales
+Complejidad espacial: O(m), donde m es el número de productos válidos importados
+
+Función de Generación de Reportes (generaReporteStock)
+Mejor caso: O(n), recorriendo una vez el inventario
+Caso promedio: O(n), realizando cálculos para cada producto
+Peor caso: O(n), con cálculos de porcentajes y escritura en archivo
+Complejidad adicional de escritura en archivo: O(1)
+
+Función de Búsqueda de Productos por Precio
+Complejidad de ordenamiento previo: O(n log n)
+Complejidad de búsqueda binaria: O(log n)
+Complejidad total: O(n log n), dominada por el ordenamiento
+
+Operaciones de Menú Principal
+Mostrar Menú: O(1)
+Lectura de Opción: O(1)
+Ejecución de Opción: Varía según la operación específica
+
+Ordenamiento: O(n log n)
+Búsqueda: O(log n)
+Inserción: O(1) o O(log n) dependiendo de la estructura
+
+Complejidad Espacial General
+Uso de vectores para inventario: O(n)
+Árbol Binario de Búsqueda para clientes: O(m), donde m es número de clientes
+Espacio adicional para operaciones temporales: O(log n) o O(n) dependiendo de la operación
+
 Ya que el programa efectúa una secuencia de operaciones de inserción, eliminación y búsqueda, la complejidad final del programa sería: (O(n))
 
 ## SICT0302: Toma decisiones
