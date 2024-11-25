@@ -1,0 +1,5 @@
+Camiseta_Polo 399.99 25
+Jeans_Oversize 899.90 15
+Gorra_Baseball 199.50 40
+Bufanda_Gucci 299.75 30
+Zapatos_Louis_Vuitton 799.99 10

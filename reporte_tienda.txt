@@ -1,0 +1,40 @@
+REPORTE DE PROUCTOS CON BAJO STOCK - BYAK CLOTHING
+Fecha de reporte: Sun Nov 24 20:09:37 2024
+
+Todos los productos con menor stock a: 14 unidades.
+==================================================
+
+PRODUCTO: Vestido Rojo Escotado
+Stock actual: 10
+Precio unitario: $399.90
+Valor en inventario: $3999.00
+Unidades necesarias para alcanzar nivel arriba del límite seleccionado: 4
+------------------------------
+
+PRODUCTO: Zip-up Negro
+Stock actual: 8
+Precio unitario: $699.50
+Valor en inventario: $5596.00
+Unidades necesarias para alcanzar nivel arriba del límite seleccionado: 6
+------------------------------
+
+PRODUCTO: Denim Jacket Azul
+Stock actual: 12
+Precio unitario: $799.99
+Valor en inventario: $9599.88
+Unidades necesarias para alcanzar nivel arriba del límite seleccionado: 2
+------------------------------
+
+PRODUCTO: Zapatos Casual
+Stock actual: 10
+Precio unitario: $799.99
+Valor en inventario: $7999.90
+Unidades necesarias para alcanzar nivel arriba del límite seleccionado: 4
+------------------------------
+
+
+RESUMEN DEL REPORTE
+------------------------------
+Total de productos en alerta de 'Sold Out': 4
+Valor total del inventario en riesgo: $27194.78
+Porcentaje del inventario en alerta: 16.00%
