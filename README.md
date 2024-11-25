@@ -9,20 +9,20 @@ En el primer avance del proyecto se realizó un prototipo de un sistema básico 
 En el segundo avance se expandieron significativamente las capacidades del sistema añadiendo un módulo completo de gestión de clientes mediante un árbol binario de búsqueda (BST), que permite agregar, buscar por nombre o ID, y eliminar y listar clientes de manera ordenada. Se agregaron nuevas funcionalidades críticas como la capacidad de importar productos desde archivos externos. 
 
 # Cambios Sobre el primer avance
-**Cambio 1**: Nuevas funcionalidades: Gestión de clientes usando un árbol binario de búsqueda (BST).
-Cambio 2: Menú ampliado: Se agregan opciones para manejar clientes (agregar, buscar, eliminar, listar).
-Cambio 3: Manejo de archivos: Capacidad de leer inventarios desde archivos externos.
-Cambio 4: Separación de funcionalidades en diferentes archivos (Clientes.h, productos.h).
+Cambio 1: Nuevas funcionalidades: Gestión de clientes usando un árbol binario de búsqueda (BST).  
+Cambio 2: Menú ampliado: Se agregan opciones para manejar clientes (agregar, buscar, eliminar, listar).  
+Cambio 3: Manejo de archivos: Capacidad de leer inventarios desde archivos externos.  
+Cambio 4: Separación de funcionalidades en diferentes archivos (Clientes.h, productos.h).  
 
 ## Descripción Último Avance
 Este último avance incluye mejoras significativas en la gestión del sistema, destacando la implementación de reportes personalizados para productos con bajo stock, donde se detalla el valor del inventario en riesgo de quedarse "sold out", las unidades faltantes y el porcentaje de productos afectados, con opción de exportarlos a archivos. También se optimiza la presentación del inventario mediante tablas alineadas y encabezados claros, además de perfeccionar la búsqueda binaria para números flotantes con tolerancia. Se agregan validaciones robustas para la importación de datos desde archivos externos, asegurando que solo se procesen valores válidos, y se amplía el menú con opciones como generación de reportes, mientras se mantiene el manejo eficiente de clientes y productos mediante estructuras como BST y vectores.
 
 # Cambios Sobre el segundo avance
-Cambio 1: Reportes personalizados: Generación de reportes de bajo stock con detalles como unidades necesarias y valor en riesgo.
-Cambio 2: Mejoras visuales: Presentación del inventario con tablas formateadas y encabezados claros.
-Cambio 3: Validación de datos: Mayor control en la importación de inventarios desde archivos, ignorando entradas inválidas.
-Cambio 4: Optimización: Ajustes en la búsqueda binaria para trabajar con flotantes y tolerancia.
-Cambio 5: Ampliación del menú: Nuevas opciones, como generar reportes y un manejo más detallado del inventario.
+Cambio 1: Reportes personalizados: Generación de reportes de bajo stock con detalles como unidades necesarias y valor en riesgo.  
+Cambio 2: Mejoras visuales: Presentación del inventario con tablas formateadas y encabezados claros.  
+Cambio 3: Validación de datos: Mayor control en la importación de inventarios desde archivos, ignorando entradas inválidas.  
+Cambio 4: Optimización: Ajustes en la búsqueda binaria para trabajar con flotantes y tolerancia.  
+Cambio 5: Ampliación del menú: Nuevas opciones, como generar reportes y un manejo más detallado del inventario.  
 
 ## Descripción del proyecto
 **BYAK Clothing Management** es un programa diseñado para gestionar eficientemente el inventario y los clientes de una tienda de ropa, permitiendo agregar productos y clientes, ordenar el inventario por diferentes criterios y generar reportes de bajo stock.
