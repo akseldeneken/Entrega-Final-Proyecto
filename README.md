@@ -143,30 +143,33 @@ Ya que el programa efectúa una secuencia de operaciones de inserción, eliminac
 
 ## SICT0302: Toma decisiones
 #### Selección del Algoritmo de Ordenamiento
-Dado que la gestión eficiente del inventario y la experiencia del cliente son prioridades para BYAK Clothing, se seleccionaron algoritmos y estructuras que optimizan el rendimiento en contextos dinámicos. La solución aborda tanto el manejo del inventario como la gestión de clientes, adaptándose a las necesidades específicas de cada caso.
+Para el ordenamiento del inventario, se utilizó Merge Sort debido a sus características específicas:
+Complejidad Temporal Consistente: O(n log n) en todos los casos
+Estabilidad: Mantiene el orden relativo de elementos con valores iguales
+Rendimiento Predecible: No depende de la disposición inicial de los datos
+Eficiencia para Grandes Volúmenes: Ideal para inventarios extensos
 
-Eficiencia en Ordenamiento:
-Se utilizó Merge Sort para ordenar el inventario por precio, nombre o stock, ya que garantiza una complejidad de O(nlogn) en el peor caso, manteniendo estabilidad y eficacia incluso para grandes volúmenes de datos. Esto asegura una organización clara del inventario para consultas rápidas y precisas. Aunque algoritmos como Quick Sort pueden ser más rápidos en promedio, Merge Sort es más consistente y no depende de la disposición inicial de los datos.
+Ventajas sobre otros algoritmos:
 
-Gestión Dinámica de Clientes:
-Para manejar una base de datos de clientes que crece y cambia constantemente, se implementó un árbol binario de búsqueda (BST). Este permite buscar, agregar y eliminar clientes con una complejidad promedio de O(logn), manteniendo el sistema eficiente incluso con muchas operaciones. A diferencia de listas enlazadas o vectores, el BST asegura un acceso ordenado y tiempos consistentes para operaciones clave.
+Más estable que Quick Sort
+Mejor rendimiento que Bubble Sort o Insertion Sort para grandes conjuntos de datos
+Divide el problema recursivamente, lo que facilita su implementación y comprensión
 
-### Selección de la Estructura de Datos
-Vectores para Inventario:
-Los vectores permiten aprovechar la continuidad en memoria para ordenamientos rápidos con Merge Sort y búsquedas eficientes con algoritmos como la búsqueda binaria. Ofrecen flexibilidad para modificar el inventario mediante inserciones y eliminaciones, equilibrando simplicidad y rendimiento.
+## Selección de Estructuras de Datos
+Vectores para Inventario
+Razones para su elección:
+Acceso directo por índice en O(1)
+Memoria contigua que mejora el rendimiento de acceso
+Flexibilidad para modificar elementos
+Compatibilidad con algoritmos de ordenamiento como Merge Sort
 
-Árbol Binario de Búsqueda para Clientes:
-La estructura garantiza un orden dinámico sin la necesidad de reordenar explícitamente tras cada inserción o eliminación. Facilita listados ordenados de clientes y búsquedas rápidas tanto por nombre como por ID, siendo ideal para bases de datos en crecimiento.
+Árbol Binario de Búsqueda (BST) para Clientes
+Consideraciones:
+Permite búsquedas ordenadas
+Inserción y eliminación relativamente eficientes
+Limitación Importante: No garantiza balanceo automático
 
-Merge Sort para Ordenamiento:
-Este algoritmo proporciona un balance entre rendimiento y estabilidad, esencial para manejar atributos como precios o nombres. Permite ordenar el inventario completo en tiempo eficiente, mejorando la experiencia del usuario al consultar productos organizados.
-
-Búsqueda Binaria para Consultas:
-Con una complejidad de O(logn), es ideal para localizar productos rápidamente en un inventario previamente ordenado. Minimiza el tiempo de búsqueda, clave para una gestión de inventario eficiente en tiempo real.
-
-Adaptabilidad a Cambios Dinámicos
-El diseño del proyecto permite integrar nuevos productos y clientes sin comprometer el rendimiento. Las operaciones de inserción y eliminación en el BST garantizan un manejo fluido de clientes, mientras que el uso de vectores facilita la integración de datos de inventario desde archivos externos. Esto asegura que el sistema pueda adaptarse a un flujo constante de cambios en tiempo real, sin necesidad de reorganizaciones completas tras cada modificación.
-
+Recomendación de Mejora: Para operaciones consistentes O(log n), considerar implementar un Árbol AVL o Árbol Rojo-Negro que mantengan el balance automáticamente.
 ## SICT0303: Implementa acciones científicas
 Considero que aprendí a aplicar correctamente los mecanismos de consulta, lectura y escritura de información para las estructuras de datos vistas en clase, seleccionando aquellas que mejor se adaptaran a los requerimientos del proyecto. Reflexioné sobre el uso real del código en la gestión de inventarios y clientes, priorizando la eficiencia y funcionalidad en cada componente poniendome en el lugar de el dueño d euna tienda de ropa. Me enfoqué en implementar estructuras y algoritmos que no solo fueran eficientes, sino también adaptables, buscando optimizar el manejo del inventario y la experiencia de consulta para los usuarios.
 
