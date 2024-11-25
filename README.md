@@ -9,7 +9,7 @@ En el primer avance del proyecto se realizó un prototipo de un sistema básico 
 En el segundo avance se expandieron significativamente las capacidades del sistema añadiendo un módulo completo de gestión de clientes mediante un árbol binario de búsqueda (BST), que permite agregar, buscar por nombre o ID, y eliminar y listar clientes de manera ordenada. Se agregaron nuevas funcionalidades críticas como la capacidad de importar productos desde archivos externos. 
 
 # Cambios Sobre el primer avance
-Cambio 1: Nuevas funcionalidades: Gestión de clientes usando un árbol binario de búsqueda (BST).
+**Cambio 1**: Nuevas funcionalidades: Gestión de clientes usando un árbol binario de búsqueda (BST).
 Cambio 2: Menú ampliado: Se agregan opciones para manejar clientes (agregar, buscar, eliminar, listar).
 Cambio 3: Manejo de archivos: Capacidad de leer inventarios desde archivos externos.
 Cambio 4: Separación de funcionalidades en diferentes archivos (Clientes.h, productos.h).
