@@ -114,7 +114,9 @@ Vectores para inventario: Los vectores ofrecen acceso O(1) a elementos por índi
 Árbol Binario de Búsqueda (BST) para clientes: La inserción, búsqueda y eliminación tienen una complejidad promedio de O(logn), aunque en el peor caso, si el árbol está desbalanceado, puede llegar a O(n). Esto es mitigado con la implementación cuidadosa de las operaciones.
 
 ### 3. **Análisis de Complejidad de Otros Componentes y Complejidad Total**
-El programa combina los algoritmos de ordenamiento y búsqueda con estructuras eficientes, logrando una complejidad general de O(nlogn) para operaciones de inventario (ordenamiento y búsqueda). Operaciones adicionales, como el manejo del BST para clientes, no impactan significativamente el rendimiento global gracias a su promedio de complejidad de O(logn).
+Búsqueda por Precio: La complejidad de la búsqueda por precio (busquedaBinaria) es O(nlogn), ya que primero requiere ordenar el inventario utilizando Merge Sort (O(nlogn)) y luego realiza la búsqueda binaria (O(logn)), siendo el ordenamiento el paso dominante.  
+Mostrar Inventario (mostrarInventario): Recorre el vector de productos y muestra cada producto en la consola. El tiempo requerido para recorrer el vector es O(n), ya que debe iterar por cada producto una vez para imprimir sus datos. Así que la complejidad es O(n).  
+Ya que el programa efectúa una secuencia de operaciones de inserción, eliminación y búsqueda, la complejidad final del programa sería: (O(n))
 
 ## SICT0302: Toma decisiones
 #### Selección del Algoritmo de Ordenamiento
