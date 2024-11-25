@@ -25,7 +25,7 @@ Cambio 4: Optimización: Ajustes en la búsqueda binaria para trabajar con flota
 Cambio 5: Ampliación del menú: Nuevas opciones, como generar reportes y un manejo más detallado del inventario.  
 
 ## Descripción del proyecto
-**BYAK Clothing Management** es un programa diseñado para gestionar eficientemente el inventario y los clientes de una tienda de ropa, permitiendo agregar productos y clientes, ordenar el inventario por diferentes criterios y generar reportes de bajo stock.
+**BYAK Clothing Manager** es un programa diseñado para gestionar eficientemente el inventario y los clientes de una tienda de ropa, permitiendo agregar productos y clientes, ordenar el inventario por diferentes criterios y generar reportes de bajo stock.
 
 Gestión de Inventario: Los productos se organizan en un vector y pueden ordenarse según atributos como precio, nombre o cantidad en stock mediante el algoritmo Merge Sort. Además, incluye funcionalidades de búsqueda binaria para localizar productos por precio y la capacidad de importar inventarios desde archivos externos, validando los datos ingresados.
 
