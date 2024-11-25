@@ -114,91 +114,92 @@ Vectores para inventario: Los vectores ofrecen acceso O(1) a elementos por índi
 Árbol Binario de Búsqueda (BST) para clientes: La inserción, búsqueda y eliminación tienen una complejidad promedio de O(logn), aunque en el peor caso, si el árbol está desbalanceado, puede llegar a O(n). Esto es mitigado con la implementación cuidadosa de las operaciones.
 
 Vectores para inventario:
-Mejor caso: O(1) para acceso por índice
+Mejor caso: O(1) para acceso por índice  
 Caso promedio:
-Acceso: O(1)
-Inserción al final: O(1)
-Inserción/eliminación en posición intermedia: O(n)
-Peor caso: O(n) para inserciones y eliminaciones que requieran reorganizar elementos  
+Acceso: O(1)  
+Inserción al final: O(1)  
+Inserción/eliminación en posición intermedia: O(n)  
+Peor caso: O(n) para inserciones y eliminaciones que requieran reorganizar elementos    
   
 Árbol Binario de Búsqueda (BST) para clientes:
 Mejor caso (árbol balanceado):
-Inserción: O(log n)
-Búsqueda: O(log n)
-Eliminación: O(log n)
+Inserción: O(log n)  
+Búsqueda: O(log n)  
+Eliminación: O(log n)  
 Caso promedio:
-Inserción: O(log n)
-Búsqueda: O(log n)
-Eliminación: O(log n)
+Inserción: O(log n)  
+Búsqueda: O(log n)  
+Eliminación: O(log n)  
 
 Peor caso (árbol completamente desbalanceado):
-Inserción: O(n)
-Búsqueda: O(n)
-Eliminación: O(n)
+Inserción: O(n)  
+Búsqueda: O(n)  
+Eliminación: O(n)  
 
 ### 3. **Análisis de Complejidad de Otros Componentes y Complejidad Total**
-Función de Importación de Inventario (leerInventarioDesdeArchivo)
-Mejor caso: O(n), cuando todos los datos son válidos
-Caso promedio: O(n), iterando sobre cada línea del archivo
-Peor caso: O(n), con validaciones adicionales
-Complejidad espacial: O(m), donde m es el número de productos válidos importados
+Función de Importación de Inventario (leerInventarioDesdeArchivo)  
+Mejor caso: O(n), cuando todos los datos son válidos  
+Caso promedio: O(n), iterando sobre cada línea del archivo  
+Peor caso: O(n), con validaciones adicionales  
+Complejidad espacial: O(m), donde m es el número de productos válidos importados  
 
-Función de Generación de Reportes (generaReporteStock)
-Mejor caso: O(n), recorriendo una vez el inventario
-Caso promedio: O(n), realizando cálculos para cada producto
-Peor caso: O(n), con cálculos de porcentajes y escritura en archivo
-Complejidad adicional de escritura en archivo: O(1)
+Función de Generación de Reportes (generaReporteStock)  
+Mejor caso: O(n), recorriendo una vez el inventario  
+Caso promedio: O(n), realizando cálculos para cada producto  
+Peor caso: O(n), con cálculos de porcentajes y escritura en archivo  
+Complejidad adicional de escritura en archivo: O(1)  
 
-Función de Búsqueda de Productos por Precio
-Complejidad de ordenamiento previo: O(n log n)
-Complejidad de búsqueda binaria: O(log n)
-Complejidad total: O(n log n), dominada por el ordenamiento
+Función de Búsqueda de Productos por Precio  
+Complejidad de ordenamiento previo: O(n log n)  
+Complejidad de búsqueda binaria: O(log n)  
+Complejidad total: O(n log n), dominada por el ordenamiento  
 
-Operaciones de Menú Principal
-Mostrar Menú: O(1)
-Lectura de Opción: O(1)
-Ejecución de Opción: Varía según la operación específica
+Operaciones de Menú Principal  
+Mostrar Menú: O(1)  
+Lectura de Opción: O(1)  
+Ejecución de Opción: Varía según la operación específica  
 
-Ordenamiento: O(n log n)
-Búsqueda: O(log n)
-Inserción: O(1) o O(log n) dependiendo de la estructura
+Ordenamiento: O(n log n)  
+Búsqueda: O(log n)  
+Inserción: O(1) o O(log n) dependiendo de la estructura  
 
-Complejidad Espacial General
-Uso de vectores para inventario: O(n)
-Árbol Binario de Búsqueda para clientes: O(m), donde m es número de clientes
-Espacio adicional para operaciones temporales: O(log n) o O(n) dependiendo de la operación
+Complejidad Espacial General  
+Uso de vectores para inventario: O(n)  
+Árbol Binario de Búsqueda para clientes: O(m), donde m es número de clientes  
+Espacio adicional para operaciones temporales: O(log n) o O(n) dependiendo de la operación  
 
 Ya que el programa efectúa una secuencia de operaciones de inserción, eliminación y búsqueda, la complejidad final del programa sería: (O(n))
 
 ## SICT0302: Toma decisiones
 #### Selección del Algoritmo de Ordenamiento
-Para el ordenamiento del inventario, se utilizó Merge Sort debido a sus características específicas:
-Complejidad Temporal Consistente: O(n log n) en todos los casos
-Estabilidad: Mantiene el orden relativo de elementos con valores iguales
-Rendimiento Predecible: No depende de la disposición inicial de los datos
-Eficiencia para Grandes Volúmenes: Ideal para inventarios extensos
+Para el ordenamiento del inventario, se utilizó Merge Sort debido a sus características específicas:  
+Complejidad Temporal Consistente: O(n log n) en todos los casos  
+Estabilidad: Mantiene el orden relativo de elementos con valores iguales  
+Rendimiento Predecible: No depende de la disposición inicial de los datos  
+Eficiencia para Grandes Volúmenes: Ideal para inventarios extensos  
 
 Ventajas sobre otros algoritmos:
 
-Más estable que Quick Sort
-Mejor rendimiento que Bubble Sort o Insertion Sort para grandes conjuntos de datos
-Divide el problema recursivamente, lo que facilita su implementación y comprensión
+Más estable que Quick Sort  
+Mejor rendimiento que Bubble Sort o Insertion Sort para grandes conjuntos de datos  
+Divide el problema recursivamente, lo que facilita su implementación y comprensión  
 
 ## Selección de Estructuras de Datos
-Vectores para Inventario
-Razones para su elección:
-Acceso directo por índice en O(1)
-Memoria contigua que mejora el rendimiento de acceso
-Flexibilidad para modificar elementos
-Compatibilidad con algoritmos de ordenamiento como Merge Sort
+Vectores para Inventario  
+Razones para su elección:  
+Acceso directo por índice en O(1)  
+Memoria contigua que mejora el rendimiento de acceso  
+Flexibilidad para modificar elementos  
+Compatibilidad con algoritmos de ordenamiento como Merge Sort  
 
-Árbol Binario de Búsqueda (BST) para Clientes
-Consideraciones:
-Permite búsquedas ordenadas
-Inserción y eliminación relativamente eficientes
-Limitación Importante: No garantiza balanceo automático
+Árbol Binario de Búsqueda (BST) para Clientes  
+Consideraciones:  
+Permite búsquedas ordenadas  
+Inserción y eliminación relativamente eficientes  
+Limitación Importante: No garantiza balanceo automático  
 
 Recomendación de Mejora: Para operaciones consistentes O(log n), considerar implementar un Árbol AVL o Árbol Rojo-Negro que mantengan el balance automáticamente.
+
 ## SICT0303: Implementa acciones científicas
 Considero que aprendí a aplicar correctamente los mecanismos de consulta, lectura y escritura de información para las estructuras de datos vistas en clase, seleccionando aquellas que mejor se adaptaran a los requerimientos del proyecto. Reflexioné sobre el uso real del código en la gestión de inventarios y clientes, priorizando la eficiencia y funcionalidad en cada componente poniendome en el lugar de el dueño d euna tienda de ropa. Me enfoqué en implementar estructuras y algoritmos que no solo fueran eficientes, sino también adaptables, buscando optimizar el manejo del inventario y la experiencia de consulta para los usuarios.
 
