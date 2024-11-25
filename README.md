@@ -60,8 +60,10 @@ Se destacan las siguientes funcionalidades principales:
 
 ## Compilación
 Ejecuta el siguiente comando en la terminal:
-`g++ -std=c++11 mainTienda.cpp` 
-`./a out` 
+`g++ -std=c++11 mainTienda.cpp -o byak` 
+## Ejecución
+Ejecuta el siguiente comando en la terminal:
+`./byak` 
 
 ## Clases Principales
 En el proyecto existen las siguientes clases:
